@@ -1,7 +1,3 @@
-SELECT location, date, total_cases, new_cases, total_deaths, population
-FROM PortfolioProject..CovidDeaths
-ORDER BY 1, 2
-
 -- Likelihood of dying if you contract COVID in your country
 SELECT location, date, total_cases, total_deaths, (total_deaths/CAST(total_cases AS DECIMAL)) * 100 AS DeathPercentage
 FROM PortfolioProject..CovidDeaths
