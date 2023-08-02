@@ -37,6 +37,14 @@ SELECT
 FROM PortfolioProject..StudentAcademicSuccess
 WHERE Status_at_end_of_course = 'Dropout'
 
+/*
+FINDINGS:
+The percentage of students who dropped out during periods of positive inflation is significantly higher than the percentage
+of students who dropped out during periods of negative inflation with the percentage during positive inflation being 79.45%
+and the percentage during negative inflation being 20.55%. This suggests that low economic conditions may influence increases 
+in the number of student dropouts.
+*/
+
 ----------------------------------------------------------------------------------------------
 
 /* STEM RELATED COURSES VS. NON-STEM RELATED COURSES */
