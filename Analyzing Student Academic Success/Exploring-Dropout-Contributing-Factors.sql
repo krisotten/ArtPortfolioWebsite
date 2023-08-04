@@ -183,7 +183,7 @@ AND Status_at_end_of_course = 'Dropout'
 FINDINGS:
 Overall, the percentage of male dropouts within the dataset is higher than the percentage of female
 dropouts with a total percent of 45.05% compared to 25.11%. This is interesting considering that there 
-are almost double the amount of females within the dataset as there are males within the dataset yet the 
+are almost double the amount of males within the dataset as there are females within the dataset yet the 
 percentage of dropouts among males is nearly double that of females. 
 */
 
