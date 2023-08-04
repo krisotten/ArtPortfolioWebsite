@@ -154,7 +154,8 @@ WHERE Gender = 'Female'
 SELECT (CAST(COUNT(*) AS float) / 
     (SELECT COUNT(*)
     FROM PortfolioProject..StudentAcademicSuccess
-    WHERE Gender = 'Female'))*100 AS '% of Female Dropouts'
+    WHERE Gender = 'Female'))*100
+    AS '% of Female Dropouts'
 FROM PortfolioProject..StudentAcademicSuccess
 WHERE Gender = 'Female'
 AND Status_at_end_of_course = 'Dropout'
@@ -174,7 +175,8 @@ WHERE Gender = 'Male'
 SELECT (CAST(COUNT(*) AS float) / 
     (SELECT COUNT(*)
     FROM PortfolioProject..StudentAcademicSuccess
-    WHERE Gender = 'Male'))*100 AS '% of Male Dropouts'
+    WHERE Gender = 'Male'))*100
+    AS '% of Male Dropouts'
 FROM PortfolioProject..StudentAcademicSuccess
 WHERE Gender = 'Male'
 AND Status_at_end_of_course = 'Dropout'
