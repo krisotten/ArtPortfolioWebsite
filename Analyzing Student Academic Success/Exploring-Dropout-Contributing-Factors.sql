@@ -84,7 +84,8 @@ SELECT (CAST(COUNT(*) AS float) /
     WHERE Course LIKE 'Biofuel Production Technologies'
     OR Course LIKE 'Informatics Engineering'
     OR Course LIKE 'Nursing'
-    OR Course LIKE 'Veterinary Nursing'))*100 AS '% of Dropouts in STEM courses'
+    OR Course LIKE 'Veterinary Nursing'))*100
+    AS '% of Dropouts in STEM courses'
 FROM PortfolioProject..StudentAcademicSuccess
 WHERE (Course LIKE 'Biofuel Production Technologies'
 OR Course LIKE 'Informatics Engineering'
@@ -116,7 +117,8 @@ SELECT (CAST(COUNT(*) AS float) /
     WHERE Course NOT LIKE 'Biofuel Production Technologies'
     AND Course NOT LIKE 'Informatics Engineering'
     AND Course NOT LIKE 'Nursing'
-    AND Course NOT LIKE 'Veterinary Nursing'))*100 AS '% of Dropouts in non-STEM courses'
+    AND Course NOT LIKE 'Veterinary Nursing'))*100
+    AS '% of Dropouts in non-STEM courses'
 FROM PortfolioProject..StudentAcademicSuccess
 WHERE Course NOT LIKE 'Biofuel Production Technologies'
 AND Course NOT LIKE 'Informatics Engineering'
