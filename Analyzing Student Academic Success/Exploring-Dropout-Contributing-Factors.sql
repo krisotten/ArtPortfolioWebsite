@@ -211,7 +211,8 @@ SELECT (CAST(COUNT(*) AS float) /
     (SELECT COUNT(*)
     FROM PortfolioProject..StudentAcademicSuccess
     WHERE Debtor = 'Yes'
-    AND Tuition_fees_up_to_date = 'No'))*100 AS '% of Dropouts who are Debtors & Behind on Tuition'
+    AND Tuition_fees_up_to_date = 'No'))*100
+    AS '% of Dropouts who are Debtors & Behind on Tuition'
 FROM PortfolioProject..StudentAcademicSuccess
 WHERE Debtor = 'Yes'
 AND Tuition_fees_up_to_date = 'No'
@@ -235,7 +236,8 @@ SELECT (CAST(COUNT(*) AS float) /
     (SELECT COUNT(*)
     FROM PortfolioProject..StudentAcademicSuccess
     WHERE (Debtor = 'Yes' AND Tuition_fees_up_to_date = 'Yes')
-    OR (Tuition_fees_up_to_date = 'No' AND Debtor = 'No')))*100 AS '% of Dropouts in Debtors or Student Behind on Tuition'
+    OR (Tuition_fees_up_to_date = 'No' AND Debtor = 'No')))*100
+    AS '% of Dropouts in Debtors or Student Behind on Tuition'
 FROM PortfolioProject..StudentAcademicSuccess
 WHERE ((Debtor = 'Yes' AND Tuition_fees_up_to_date = 'Yes')
 OR (Tuition_fees_up_to_date = 'No' AND Debtor = 'No'))
@@ -259,7 +261,8 @@ SELECT (CAST(COUNT(*) AS float) /
     (SELECT COUNT(*) AS 'Non-Debtors'
     FROM PortfolioProject..StudentAcademicSuccess
     WHERE Debtor = 'No'
-    AND Tuition_fees_up_to_date = 'Yes'))*100 AS '% of Dropouts in Non-Debtors'
+    AND Tuition_fees_up_to_date = 'Yes'))*100
+    AS '% of Dropouts in Non-Debtors'
 FROM PortfolioProject..StudentAcademicSuccess
 WHERE Debtor = 'No'
 AND Tuition_fees_up_to_date = 'Yes'
