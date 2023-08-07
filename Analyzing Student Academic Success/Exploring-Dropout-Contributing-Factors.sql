@@ -501,6 +501,6 @@ FINDINGS:
 I predicted that students with one or both parents having higher education would make up a lower percentage of student
 dropouts. These queries support this prediction with the percentage of dropouts having both parents with a background in 
 higher education being 5.63% while dropouts with only one parent in higher education had a percentage of 11.26%. Finally,
-the majority of dropouts had parents who didn't have a background in higher ecucation with a total percentage of 83.11%.
+the majority of dropouts had parents who didn't have a background in higher education with a total percentage of 83.11%.
 */
 
